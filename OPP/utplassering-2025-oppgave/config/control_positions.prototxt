@@ -1,0 +1,86 @@
+control_position {
+  name: "Fwd"
+  orientation: FacingForward
+  command_transfer_type: Take
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [1]
+    thrusters_second: [2]
+  }
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [3]
+    thrusters_second: [4]
+  }
+  control_panels {
+    lever_type: SinglePropulsion
+    thrusters: [5]
+  }  
+}
+control_position {
+  name: "Stbd"
+  orientation: FacingForward
+  command_transfer_type: Take
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [1]
+    thrusters_second: [2]
+  }
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [3]
+    thrusters_second: [4]
+  }
+  control_panels {
+    lever_type: SinglePropulsion
+    thrusters: [5]
+  }
+}
+control_position {
+  name: "Port"
+  orientation: FacingForward
+  command_transfer_type: Take
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [1]
+    thrusters_second: [2]
+  }
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [3]
+    thrusters_second: [4]
+  }
+  control_panels {
+    lever_type: SinglePropulsion
+    thrusters: [5]
+  }
+}
+control_position {
+  name: "Aft"
+  orientation: FacingAft
+  command_transfer_type: Take
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [1]
+    thrusters_second: [2]
+  }
+  control_panels {
+    lever_type: DualTunnel
+    thrusters: [3]
+    thrusters_second: [4]
+  }
+  control_panels {
+    lever_type: SinglePropulsion
+    thrusters: [5]
+  }
+}
+control_position {
+  name: "ECR Room"
+  orientation: FacingAft
+  command_transfer_type: Emergency
+  control_panels {
+    name: "ECR"
+    lever_type: SinglePropulsion
+    thrusters: [5]
+  }
+}

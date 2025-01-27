@@ -1,0 +1,878 @@
+# proto-file: launcher_configuration.proto
+# proto-message: Configuration
+
+profiles {
+  profile_name: "panels"
+  processes {
+    path: "./PanelSimulator"
+    args: "1"
+    args: "1"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "1"
+    args: "2"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "1"
+    args: "3"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "1"
+    args: "4"
+  }
+}
+
+profiles {
+  profile_name: "thr1"
+  processes {
+    path: "./ThrusterSystemSimulatorGui"
+    args: "1"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "1"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "1"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "1"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "1"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "1"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+}
+
+profiles {
+  profile_name: "thr2"
+  processes {
+    path: "./ThrusterSystemSimulatorGui"
+    args: "2"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "2"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "2"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "2"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "2"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "2"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+}
+
+profiles {
+  profile_name: "thr3"
+  processes {
+    path: "./ThrusterSystemSimulatorGui"
+    args: "3"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "3"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "3"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "3"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "3"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "3"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+}
+
+profiles {
+  profile_name: "thr4"
+  processes {
+    path: "./ThrusterSystemSimulatorGui"
+    args: "4"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "4"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "4"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "4"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./PanelSimulator"
+    args: "4"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "4"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+}
+
+profiles {
+  profile_name: "pstc"
+  processes {
+    path: "./LocalControlService"
+    args: "1"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "2"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "3"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "4"	
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "1"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "2"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "3"
+  }
+  processes {
+    path: "./ThrusterControlService"
+    args: "4"
+  }  
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "1"
+  }   	
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "2"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "3"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "4"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "1"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "2"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "3"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+  processes {
+    path: "./SerialIo"
+    args: "--dds-domain-id"
+    args: "1"
+    args: "--dds-partition"
+    args: "4"
+    args: "tx2rx"
+    args: "0"
+    args: "2"
+  }
+}
+
+profiles {
+  profile_name: "common-mon1"
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p1"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.120.11"
+  }
+}
+
+profiles {
+  profile_name: "common-mon2"
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p2"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.120.12"
+  }
+}
+
+profiles {
+  profile_name: "common-mon3"
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p3"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.120.13"
+  }
+}
+
+profiles {
+  profile_name: "common-mon4"
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p4"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.120.14"
+  }
+}
+
+profiles {
+  profile_name: "ecr-mon1"
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p1"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.120.20"
+  }
+}
+
+profiles {
+  profile_name: "ctrl1"
+  processes {
+    path: "./ThrusterControlService"
+    args: "1"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "-d1"
+    args: "-p1"
+    args: "1"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "1"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p1"
+    args: "0"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p1"
+    args: "--ptc"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.1.10"
+  }
+}
+
+profiles {
+  profile_name: "ctrl2"
+  processes {
+    path: "./ThrusterControlService"
+    args: "2"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "-d1"
+    args: "-p2"
+    args: "2"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "2"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p2"
+    args: "0"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p2"
+    args: "--ptc"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.2.10"
+  }
+}
+
+profiles {
+  profile_name: "ctrl3"
+  processes {
+    path: "./ThrusterControlService"
+    args: "3"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "-d1"
+    args: "-p3"
+    args: "3"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "3"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p3"
+    args: "0"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p3"
+    args: "--ptc"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.3.10"
+  }
+}
+
+profiles {
+  profile_name: "ctrl4"
+  processes {
+    path: "./ThrusterControlService"
+    args: "4"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "-d1"
+    args: "-p4"
+    args: "4"
+  }
+  processes {
+    path: "./NmeaInterfaceService"
+    args: "4"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p4"
+    args: "0"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p4"
+    args: "--ptc"
+  }
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.4.10"
+  }
+}
+
+profiles {
+  profile_name: "ctrl5"
+  processes {
+    path: "./PropulsionControlService"
+    args: "5"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "5"
+    args: "-p"
+    args: "main"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "-d1"
+    args: "-p5"
+    args: "5"
+    args: "--propulsion"
+  }
+    processes {
+    path: "./NmeaInterfaceService"
+    args: "5"
+    args: "--propulsion"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p5"
+    args: "0"
+  }
+    processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p5"
+    args: "--ptc"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.5.10"
+  }
+}
+
+profiles {
+  profile_name: "ctrl5-backup"
+  processes {
+    path: "./Backup_PropulsionControlService"
+    args: "5"
+  }
+  processes {
+    path: "./PanelInterfaceService"
+    args: "5"
+    args: "-p"
+    args: "backup"
+  }
+  processes {
+    path: "./PanelManagerService"
+    args: "5"
+    args: "-p52"
+    args: "5"
+    args: "--propulsion"
+  }
+  processes {
+    path: "./BpApiService"
+    args: "-d1"
+    args: "-p52"
+    args: "0"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p52"
+    args: "--ptc"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.5.12"
+  }
+}
+
+profiles {
+  profile_name: "ctrl5-gear"
+  processes {
+    path: "./GearControlService"
+    args: "15"
+  }
+   processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p15"
+    args: "--ptc"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.5.20"
+  }
+}
+
+profiles {
+  profile_name: "mon1"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.1.11"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "1"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p1"
+  }
+}
+profiles {
+  profile_name: "mon2"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.2.11"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "2"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p2"
+  }
+}
+profiles {
+  profile_name: "mon3"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.3.11"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "3"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p3"
+  }
+}
+profiles {
+  profile_name: "mon4"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.4.11"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "4"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p4"
+  }
+}
+profiles {
+  profile_name: "mon5"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.5.11"
+  }
+  processes {
+    path: "./LocalControlService"
+    args: "5"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p5"
+  }
+}
+profiles {
+  profile_name: "mon5-gear"
+  processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args:"10.20.5.21"
+  }
+  processes {
+    path: "./LocalControlGearService"
+    args: "15"
+  }
+  processes {
+    path: "./ClockAdjusterService"
+    args: "-d1"
+    args: "-p15"
+  }
+}
+
+profiles {
+  profile_name: "sim1"
+  processes {
+    path: "./UControlIOService"
+    args: "-d2"
+    args: "-p1"
+    args: "0"
+  }
+  processes {
+    path: "./GenIoService"
+    args: "-d2"
+    args: "-s"
+    args: "1"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "-d2"
+    args: "1"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.1.150"
+  }
+}
+  
+profiles {
+  profile_name: "sim2"
+  processes {
+    path: "./UControlIOService"
+    args: "-d2"
+    args: "-p2"
+    args: "0"
+  }
+  processes {
+    path: "./GenIoService"
+    args: "-d2"
+    args: "-s"
+    args: "2"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "-d2"
+    args: "2"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.2.150"
+  }
+}
+
+profiles {
+  profile_name: "sim3"
+  processes {
+    path: "./UControlIOService"
+    args: "-d2"
+    args: "-p3"
+    args: "0"
+  }
+  processes {
+    path: "./GenIoService"
+    args: "-d2"
+    args: "-s"
+    args: "3"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "-d2"
+    args: "3"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.3.150"
+  }
+}
+
+profiles {
+  profile_name: "sim4"
+  processes {
+    path: "./UControlIOService"
+    args: "-d2"
+    args: "-p4"
+    args: "0"
+  }
+  processes {
+    path: "./GenIoService"
+    args: "-d2"
+    args: "-s"
+    args: "4"
+  }
+  processes {
+    path: "./ThrusterSystemSimulatorService"
+    args: "-d2"
+    args: "4"
+  }
+    processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.4.150"
+  }
+}
+
+profiles {
+  profile_name: "sim5"
+  processes {
+    path: "./UControlIO_propulsionService"
+    args: "-d2"
+    args: "-p5"
+    args: "0"
+  }
+      processes {
+    path: "./RestoreToolService"
+    args: "-a"
+    args: "10.20.5.150"
+  }
+}
+
+profiles {
+  profile_name: "gear"
+  processes {
+    path: "./GearLocalControlService"
+    args: "1"
+  }
+  processes {
+    path: "./GearControlService"
+    args: "1"
+  }
+}

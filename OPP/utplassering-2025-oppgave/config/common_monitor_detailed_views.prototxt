@@ -1,0 +1,173 @@
+common_monitor_detailed_views {
+  name: "FU63"
+  used_for_control_positions: [1, 2, 3, 4, 5]
+  used_for_thrusters: [1, 2, 3, 4]
+  button_groups {
+    type: StartStop
+    row: 1
+    column: 1
+    display_status_text: true
+  }
+  bars {
+    type: MotorSpeed
+    row: 1
+    min: -1780
+    max: 1780
+  }
+  bars {
+    type: MotorLoad
+    row: 3
+    min: 0
+    max: 500
+  }
+    bars {
+    type: ShipSpeed
+    row: 5
+    min: 0
+    max: 15
+  }
+  leds {
+    type: ThrusterReady
+    row: 1
+    column: 1
+    active_color: Green
+  }
+  leds {
+    type: HighShipSpeed
+    row: 1
+    column: 2
+    active_color: Orange
+  }
+}
+
+common_monitor_detailed_views {
+  used_for_control_positions: [1, 2, 3, 4, 5]
+  used_for_thrusters: [5]
+  
+  button_groups {
+    header: "Pumps"
+    row: 1
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc6
+      text_on: "On/Off"
+    }
+    
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc7
+      text_on: "Reset"
+    }
+    
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc8
+      text_on: "Toggle"
+    }
+  }
+  
+  button_groups {
+    header: "Combinator"
+    row: 1
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_SeparateCombinator
+      text_on: "On/Off"
+    }
+  }
+  
+  button_groups {
+    header: "Activate"
+    row: 1
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Activate
+      text_on: "On/Off"
+    }
+  }
+  
+  button_groups {
+    header: "Motor1"
+    row: 2
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc1
+      text_on: "On/Off"
+    }
+  }
+  
+  button_groups {
+    header: "Motor2"
+    row: 2
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc2
+      text_on: "On/Off"
+    }
+  }
+  
+  button_groups {
+    header: "VFD1"
+    row: 2
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc3
+      text_on: "Reset"
+    } 
+  }
+  
+  button_groups {
+    header: "VFD2"
+    row: 2
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc4
+      text_on: "Reset"
+    }
+  }
+  
+  button_groups {
+    header: "Shaft brake"
+    row: 2
+    buttons {
+      type: ManuallyConfigured
+      command: PtcCommand_Misc5
+      text_on: "On/Off"
+    }
+  }
+  
+  bars {
+    text: "Load"
+    signal: PtcStatus_PercentMotorLoad
+    min: 0
+    max: 100
+    unit: UnitType_Percent
+  }
+  
+  bars {
+    text: "Shaft rpm"
+    signal: PtcStatus_PropellerRpm
+    min: 0
+    max: 7500
+  }
+  
+  bars {
+    text: "Rpm order"
+    signal: PtcStatus_RpmOrder
+    min: 0
+    max: 100
+    unit: UnitType_Percent
+  }
+  
+  leds {
+    column: 1
+    text: "Pump 1 running"
+    signal: PtcStatus_LedState1
+  }
+  
+  leds {
+    column: 1
+    text: "Pump 2 running"
+    signal: PtcStatus_LedState2
+  }
+}

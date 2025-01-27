@@ -1,0 +1,279 @@
+DI {
+key: "A1_0_0_0"
+value: I_PowerAlarm
+}
+DI {
+key: "A1_0_0_1"
+value: I_FuseAlarmPowerECRPanelBackup
+}
+DI {
+key: "A1_0_0_2"
+value: I_FuseAlarmPowerIndicator
+}
+DI {
+key: "A1_0_0_3"
+value: I_FuseAlarmPowerInputModuleMain
+}
+DI {
+key: "A1_0_0_4"
+value: I_FuseAlarmPowerOutputModuleMain
+}
+DI {
+key: "A1_0_0_5"
+value: I_FuseAlarmPowerInputModuleBackup
+}
+DI {
+key: "A1_0_0_6"
+value: I_FuseAlarmPowerOutputModuleBackup
+}
+DI {
+key: "A1_0_0_7"
+value: I_FuseAlarmPowerECRPanelMain
+}
+DI {
+key: "A1_0_1_0"
+value: I_FuseAlarmPowerPlcBackupController
+}
+DI {
+key: "A1_4_0_0"
+value: I_PitchDriverFailure
+}
+DI {
+key: "A1_4_0_1"
+value: I_PitchLocalCtrl
+}
+DI {
+key: "A1_4_0_2"
+value: I_SystemBackup
+}
+DI {
+key: "A1_4_0_3"
+value: I_BackupPLCOK
+}
+DI {
+key: "A1_4_0_4"
+value: I_PitchLimitRequest1
+}
+DI {
+key: "A1_4_1_0"
+value: I_StarterReadyElMotor1
+}
+DI {
+key: "A1_4_1_1"
+value: I_StarterLocalElMotor1
+}
+DI {
+key: "A1_4_1_2"
+value: I_MotorRunningElMotor1
+}
+DI {
+key: "A1_4_1_3"
+value: I_PowerLimitedElMotor1
+}
+DI {
+key: "A1_4_1_4"
+value: I_DriveCommonAlarmElMotor1
+}
+DI {
+key: "A1_4_1_5"
+value: I_DriveFailureAlarmElMotor1
+}
+DI {
+key: "A1_4_2_0"
+value: I_StarterReadyElMotor2
+}
+DI {
+key: "A1_4_2_1"
+value: I_StarterLocalElMotor2
+}
+DI {
+key: "A1_4_2_2"
+value: I_MotorRunningElMotor2
+}
+DI {
+key: "A1_4_2_3"
+value: I_PowerLimitedElMotor2
+}
+DI {
+key: "A1_4_2_4"
+value: I_DriveCommonAlarmElMotor2
+}
+DI {
+key: "A1_4_2_5"
+value: I_DriveFailureAlarmElMotor2
+}
+DI {
+key: "A1_4_3_0"
+value: I_CoolingWaterRunning
+}
+DI {
+key: "A1_4_3_1"
+value: I_CoolingWaterAlarm
+}
+
+DO {
+key: "A1_6_0_0"
+value: O_MainOK
+}
+DO {
+key: "A1_6_0_1"
+value: O_MainPLC_PitchAlive
+}
+DO {
+key: "A1_6_0_2"
+value: O_MainPLC_RPMAlive
+}
+DO {
+key: "A1_6_0_3"
+value: O_MainPLC_SystemAlive
+}
+DO {
+key: "A1_6_1_0"
+value: O_PowerRequest
+}
+DO {
+key: "A1_6_1_1"
+value: O_ResetFailureDrive1
+}
+DO {
+key: "A1_6_1_2"
+value: O_StartDriveMotor1
+}
+DO {
+key: "A1_6_1_3"
+value: O_StopDriveMotor1
+}
+DO {
+key: "A1_6_2_0"
+value: O_WatchDog
+}
+DO {
+key: "A1_6_2_1"
+value: O_StartInterlockDriveMotor1
+}
+DO {
+key: "A1_6_2_2"
+value: O_CommonAlarm_
+}
+DO {
+key: "A1_6_2_3"
+value: O_BlockPilotValve_
+}
+DO {
+key: "A1_6_3_0"
+value: O_StartDriveMotor2
+}
+DO {
+key: "A1_6_3_1"
+value: O_StopDriveMotor2
+}
+DO {
+key: "A1_6_3_2"
+value: O_StartInterlockDriveMotor2
+}
+DO {
+key: "A1_6_3_3"
+value: O_ResetFailureDrive2
+}
+DO {
+key: "A1_6_4_0"
+value: O_ResetPitchAlarm
+}
+
+AI {
+key: "A1_1_0_0"
+value: I_LoadEngine1
+}
+AI {
+key: "A1_1_0_1"
+value: I_Engine1Rpm
+}
+AI {
+key: "A1_1_0_2"
+value: I_LoadEngine2
+}
+AI {
+key: "A1_1_0_3"
+value: I_Engine2Rpm
+}
+AI {
+key: "A1_1_1_0"
+value: I_PitchFeedback
+}
+AI {
+key: "A1_0_3_0"
+value: I_pulse_counter
+}
+
+AO {
+key: "A1_3_0_0"
+value: O_PitchDriverSetting
+}
+AO {
+key: "A1_3_0_1"
+value: O_RPMSettingOut
+}
+AO {
+key: "A1_3_1_0"
+value: O_DimmerIndication
+}
+AO {
+key: "cycle_measurment_time_ch0"
+value: O_CycleMeasurementTime
+}
+AO {
+key: "control_word_ch0"
+value: O_PulseCounterCtrlWord0
+}
+
+
+DI {
+key: "A2_0_0_0"
+value: I_PowerAlarmBridge
+}
+DI {
+key: "A2_0_0_3"
+value: I_FuseAlarmPowerInputModuleBridge
+}
+DI {
+key: "A2_0_0_4"
+value: I_FuseAlarmPowerOutputModuleBridge
+}
+
+DI {
+key: "A2_0_0_6"
+value: I_FuseAlarmBridgePanelsMain
+}
+DI {
+key: "A2_0_0_7"
+value: I_FuseAlarmBridgePanelsBackup
+}
+
+DI {
+key: "A2_4_0_0"
+value: I_BridgeSystemResetAlarms
+}
+
+DI {
+key: "A2_4_0_1"
+value: I_ReqCmdDP
+}
+
+DI {
+key: "A2_4_0_7"
+value: I_AlarmCommonBridgeCabinet
+}
+
+DO {
+key: "A2_6_2_2"
+value: O_IasCommonAlarm
+}
+
+DO {
+key: "A2_6_5_2"
+value: O_CommonAlarm_
+}
+DO {
+key: "A2_6_5_3"
+value: O_BridgeSystemAlarmResetAck
+}

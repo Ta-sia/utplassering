@@ -1,0 +1,152 @@
+DI {
+  key: "A1_0_0_0"
+  value: I_PwrFailThrR
+}
+DI {
+  key: "A1_0_0_1"
+  value: I_EMStopLoopFailure
+}
+DI {
+  key: "A1_0_0_2"
+  value: I_EMStopBridge
+}
+DI {
+  key: "A1_0_0_3"
+  value: I_FuseInputs
+}
+DI {
+  key: "A1_0_0_4"
+  value: I_FuseOutputs
+}
+DI {
+  key: "A1_0_0_5"
+  value: I_FuseEmStopBridge
+}
+DI {
+  key: "A1_4_0_5"
+  value: I_LowPressHT
+}
+DI {
+  key: "A1_4_1_0"
+  value: I_StarterReady
+}
+DI {
+  key: "A1_4_1_1"
+  value: I_StarterLocal
+}
+DI {
+  key: "A1_4_1_2"
+  value: I_DrvMtrRun
+}
+DI {
+  key: "A1_4_1_3"
+  value: I_StarterPwrLimit
+}
+DI {
+  key: "A1_4_1_4"
+  value: I_StarterAlrm
+}
+DI {
+  key: "A1_4_1_5"
+  value: I_StarterFail
+}
+DO {
+  key: "A1_6_0_0"
+  value: O_Watchdog
+}
+DO {
+  key: "A1_6_1_0"
+  value: O_ResStarterFault
+}
+DO {
+  key: "A1_6_1_1"
+  value: O_StartDrvMtr
+}
+DO {
+  key: "A1_6_1_2"
+  value: O_StopDrvMtr
+}
+DO {
+  key: "A1_6_1_3"
+  value: O_StartInterlock
+}
+AI {
+  key: "A1_1_0_0"
+  value: I_PressureHeaderTank
+}
+AI {
+  key: "A1_1_0_2"
+  value: I_OilLevelHeaderTank
+}
+AI {
+  key: "A1_1_0_3"
+  value: I_DrvMotorLoad
+}
+AI {
+  key: "A1_1_2_3"
+  value: I_DrvMotorRpm
+}
+AI {
+  key: "A1_2_0_0"
+  value: I_TempLubeOil
+}
+AI {
+  key: "A1_2_0_1"
+  value: I_TempOilHeaderTank
+}
+AO {
+  key: "A1_3_4_1"
+  value: O_CmdRPM
+}
+DI {
+  key: "A2_0_0_0"
+  value: I_PwrFailBridge
+}
+DI {
+  key: "A2_0_0_3"
+  value: I_FuseInputsBridge
+}
+DI {
+  key: "A2_0_0_4"
+  value: I_FuseOutputsBridge
+}
+DI {
+  key: "A2_0_0_6"
+  value: I_FusePanelsBridge
+}
+AI {
+  key: "A2_1_5_3"
+  value: I_CmdThrustAutopilot
+}
+DI {
+  key: "A2_4_0_0"
+  value: I_BridgeAlarmSystemResetAlarms
+}
+DI {
+  key: "A2_4_3_3"
+  value: I_RequestCmdDP
+}
+DI {
+  key: "A2_4_3_6"
+  value: I_RequestCmdAutopilot
+}
+DO {
+  key: "A2_6_2_0"
+  value: O_AlGrpComAlrmPuls
+}
+DO {
+  key: "A2_6_5_0"
+  value: O_AlGrpComAlrmPuls
+}
+DO {
+  key: "A2_6_5_1"
+  value: O_BridgeAlarmSystemResetAck
+}
+DO {
+  key: "A2_6_5_2"
+  value: O_InCommandAutopilot
+}
+DO {
+  key: "A2_6_5_3"
+  value: O_ReadyAutopilot
+}

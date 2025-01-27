@@ -1,0 +1,37 @@
+gear_model: AGTS800
+gear_name: ""
+high_temp_setpoint {
+  lub_oil_temp_before_cooler: 80
+  lub_oil_temp_after_cooler: 80
+  main_thrust_bearing_temp: 80
+  fwd_stern_tube_bearing_temp: 80
+  aft_stern_tube_bearing_temp: 80
+  intermediate_shaft_bearing_temp: 80
+  fwd_radial_bearing_temp: 80
+  aft_radial_bearing_temp: 80
+  high_temp_hysteresis: 1
+}
+pressure {
+  servo_ind_limit: 50
+  servo_ind_hysteresis_limit: 10
+  servo_range: 100
+  lub_ind_limit: 50
+  lub_ind_hysteresis_limit: 10
+  lub_range: 100
+}
+minimum_rpm_setpoints {
+  pump_3: 50
+  pump_4: 50
+  pump_5: 50
+  pump_off_delay_time: 10
+}
+shaft_brake_rpm_interlock: 10
+ias {
+  enabled: true
+  port: 0
+}
+ptc_serial_com {
+  enabled: true
+  port: 1
+}
+control_system_type: Remote

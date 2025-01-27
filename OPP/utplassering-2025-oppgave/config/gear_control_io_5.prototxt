@@ -1,0 +1,242 @@
+di {
+  key: "A1_0_0_0"
+  value: I_PowerAlarm24vdc
+}
+di {
+  key: "A1_0_0_1"
+  value: I_FuseAlarmHMI
+}
+di {
+  key: "A1_0_0_2"
+  value: I_FuseAlarmInputModules
+}
+di {
+  key: "A1_0_0_3"
+  value: I_FuseAlarmOutputModules
+}
+di {
+  key: "A1_0_0_4"
+  value: I_FuseAlarmPitchDriver
+}
+di {
+  key: "A1_0_0_5"
+  value: I_FuseAlarmShaftBrake
+}
+di {
+  key: "A1_4_0_0"
+  value: I_PowerFault
+}
+di {
+  key: "A1_4_0_2"
+  value: I_CloggedOilFilter
+}
+di {
+  key: "A1_4_0_3"
+  value: I_LowOilLevelGear
+}
+di {
+  key: "A1_4_0_4"
+  value: I_ManualPitchOperation
+}
+di {
+  key: "A1_4_0_5"
+  value: I_ShaftBrakeEngaged
+}
+di {
+  key: "A1_4_0_6"
+  value: I_StepperMotorDriverFault
+}
+di {
+  key: "A1_4_0_7"
+  value: I_PitchBackupModeActive
+}
+di {
+  key: "A1_4_1_0"
+  value: I_LowOilLevelGravityTank
+}
+di {
+  key: "A1_4_1_1"
+  value: I_Starter1Running
+}
+di {
+  key: "A1_4_1_2"
+  value: I_Starter1InStandby
+}
+di {
+  key: "A1_4_1_3"
+  value: I_Starter1Fault
+}
+di {
+  key: "A1_4_1_4"
+  value: I_Starter2Running
+}
+di {
+  key: "A1_4_1_5"
+  value: I_Starter2InStandby
+}
+di {
+  key: "A1_4_1_6"
+  value: I_Starter2Fault
+}
+do {
+  key: "A1_5_0_0"
+  value: O_StepperMotorDriverResetFault
+}
+do {
+  key: "A1_5_0_1"
+  value: O_PitchFeedbackSetZero
+}
+do {
+  key: "A1_6_0_0"
+  value: O_PitchManualModeActive
+}
+do {
+  key: "A1_6_0_1"
+  value: O_LocalControlGear
+}
+do {
+  key: "A1_6_0_2"
+  value: O_SteppermotorDirection
+}
+do {
+  key: "A1_6_1_2"
+  value: O_IasCommonAlarm
+}
+do {
+  key: "A1_6_4_0"
+  value: O_Starter1SelectStandby
+}
+do {
+  key: "A1_6_4_1"
+  value: O_Starter1Start
+}
+do {
+  key: "A1_6_4_2"
+  value: O_Starter1Stop
+}
+do {
+  key: "A1_6_4_3"
+  value: O_Starter1ResetFault
+}
+do {
+  key: "A1_6_5_0"
+  value: O_Starter2SelectStandby
+}
+do {
+  key: "A1_6_5_1"
+  value: O_Starter2Start
+}
+do {
+  key: "A1_6_5_2"
+  value: O_Starter2Stop
+}
+do {
+  key: "A1_6_5_3"
+  value: O_Starter2ResetFault
+}
+do {
+  key: "A1_7_1_0"
+  value: O_EngageShaftBrakeValve
+}
+do {
+  key: "A1_7_1_1"
+  value: O_DisengageShaftBrakeValve
+}
+ao {
+  key: "A1_3_4_0"
+  value: O_PitchSetting
+  min_scaled: 0
+  max_scaled: 1000
+  min_raw: 400
+  max_raw: 2000
+}
+ai {
+  key: "A1_1_0_0"
+  value: I_PitchFeedback
+  min_raw: 400
+  max_raw: 2000
+  min_scaled: -100
+  max_scaled: 100
+  signal_type: mA
+  tag: ""
+}
+ai {
+  key: "A1_2_0_0"
+  value: I_LubOilTempBeforeCooler
+    min_raw: 185
+    max_raw: 4500
+    min_scaled: -200
+    max_scaled: 850
+    signal_type: PT100
+    tag: "TE101"
+}
+ai {
+  key: "A1_1_0_1"
+  value: I_PitchOrder
+  min_raw: 400
+  max_raw: 2000
+  min_scaled: -100
+  max_scaled: 100
+  signal_type: mA
+  tag: ""
+}
+ai {
+  key: "A1_1_0_2"
+  value: I_SystemPressure
+  min_raw: 400
+  max_raw: 2000
+  min_scaled: 0
+  max_scaled: 100
+  signal_type: mA
+  tag: "PT20"
+}
+ai {
+  key: "A1_1_0_3"
+  value: I_LubOilPressure
+  min_raw: 400
+  max_raw: 2000
+  min_scaled: 0
+  max_scaled: 100
+  signal_type: mA
+  tag: "PT2"
+}
+ai {
+  key: "A1_2_0_1"
+  value: I_LubOilTempAfterCooler
+    min_raw: 185
+    max_raw: 4500
+    min_scaled: -200
+    max_scaled: 850
+    signal_type: PT100
+    tag: "TE101"
+}
+ai {
+  key: "A1_2_0_2"
+  value: I_MainThrustBearingTemp
+    min_raw: 185
+    max_raw: 4500
+    min_scaled: -200
+    max_scaled: 850
+    signal_type: PT100
+    tag: "TE101"
+}
+ai {
+  key: "A1_2_0_3"
+  value: I_AftSternTubeBearingTemp
+    min_raw: 185
+    max_raw: 4500
+    min_scaled: -200
+    max_scaled: 850
+    signal_type: PT100
+    tag: "TE101"
+}
+ai {
+  key: "A1_2_1_0"
+  value: I_FwdSternTubeBearingTemp
+    min_raw: 185
+    max_raw: 4500
+    min_scaled: -200
+    max_scaled: 850
+    signal_type: PT100
+    tag: "TE101"
+}
