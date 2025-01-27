@@ -23,7 +23,7 @@ def convert_yaml(input_folder):
         version = device_info.get('Version')
         if 'SerialNrs' in device_info:
             # Hvis det finnes en liste med SerialNrs, koble til hver serialnummer
-            for serial in device_info['SerialNrs']:
+            for serial in device_info['SerialNrs']: 
                 # Lag en ny nøkkel for hvert serialnummer
                 panel_name = f"BridgeControlPanel{serial}"
                 
