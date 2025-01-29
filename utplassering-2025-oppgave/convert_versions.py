@@ -28,25 +28,28 @@ def build_new_structure(data):
             continue
 
         device_info = data[thruster_key]
-        version = device_info.get('Version')
+        
+        mps_179_panel = device_info.get('MPS179_BridgePanel', {})
+        mps_179_display = device_info.get('MPS179_BridgePanelDisplay', {})
+        mps_174_panel = device_info.get('MPS174_BridgePanel', {})
 
-        if 'SerialNrs' in device_info:
-            for serial in device_info['SerialNrs']:
+        mps_179_version = mps_179_panel.get('Version')
+        mps_179_display_version = mps_179_display.get('Version')
+        mps_174_version = mps_174_panel.get('Version')
+
+        if 'SerialNrs' in mps_179_panel:
+            for serial in mps_179_panel['SerialNrs']:
                 panel_name = f"BridgeControlPanel{serial}"
                 
                 if panel_name not in new_structure:
                     new_structure[panel_name] = {'SerialNr': serial}
-                
-                if 'MPS179' in thruster_key:
-                    new_structure[panel_name].setdefault('MPS179', {})['Version'] = version
-                elif 'MPS174' in thruster_key:
-                    new_structure[panel_name].setdefault('MPS174', {})['Version'] = version
-                elif 'BridgePanelDisplay' in thruster_key:
-                    new_structure[panel_name].setdefault('MPS179_Display', {})['Version'] = version
 
-        elif 'BridgePanelDisplay' in thruster_key:
-            for panel in new_structure.values():
-                panel.setdefault('MPS179_Display', {})['Version'] = version
+                if mps_179_version:
+                    new_structure[panel_name].setdefault('MPS179', {})['Version'] = mps_179_version
+                if mps_179_display_version:
+                    new_structure[panel_name].setdefault('MPS179_Display', {})['Version'] = mps_179_display_version
+                if mps_174_version:
+                    new_structure[panel_name].setdefault('MPS174', {})['Version'] = mps_174_version
 
         print(f"Behandlet {thruster_key}: {new_structure}")
 
